@@ -138,6 +138,6 @@ public class CheckKazakhLocale {
 		NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(checkLocale);
 		double value = 23124213.4563;
 		return checkEquals("Checking decimal number format", "23 124 213,456", numberFormat.format(value)) &
-			   checkEquals("Checking currency format", "23 124 213,46 тңг", currencyFormat.format(value));
+			   checkEquals("Checking currency format", "23 124 213,46 ₸", currencyFormat.format(value));
 	}
 }
